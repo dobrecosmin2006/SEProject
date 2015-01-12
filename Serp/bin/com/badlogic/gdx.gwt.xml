@@ -3,11 +3,10 @@
     <inherits name="com.esotericsoftware.tablelayout"/>
     <source path="gdx">
         <include name="src/snake/view/Assets.java"/>
+        <include name="src/snake/model/Food.java"/>
         <include name="src/snake/view/GameScreen.java"/>
-        <include name="src/snake/view/HelpScreen.java"/>
-        <include name="src/snake/view/HelpScreen2.java"/>
-        <include name="src/snake/view/HelpScreen3.java"/>
         <include name="src/snake/view/HighscoreScreen.java"/>
+        <include name="src/snake/model/KeyInput.java"/>
         <include name="src/snake/view/LoadingScreen.java"/>
         <include name="src/snake/view/MainMenuScreen.java"/>
         <include name="src/snake/model/Poo.java"/>
@@ -16,7 +15,6 @@
         <include name="src/snake/model/Settings.java"/>
         <include name="src/snake/model/Snake.java"/>
         <include name="src/snake/model/SnakePart.java"/>
-        <include name="src/snake/model/Stain.java"/>
         <include name="src/snake/model/World.java"/>
         <include name="graphics/g2d/Animation.java"/>
         <include name="graphics/g3d/Animation.java"/>
