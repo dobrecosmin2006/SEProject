@@ -27,6 +27,8 @@ import snake.model.World;
 
 public class GameScreen extends SerpScreen implements ActionListener {
 	
+	// in this class I will have all configs for my Textures
+	
 	float vwidth = 320f; // v from virtual
 	float vheight = 480f;
 	private float ppuX; // pixels per unit on the X axis

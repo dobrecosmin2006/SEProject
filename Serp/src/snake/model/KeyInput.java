@@ -5,6 +5,8 @@ import snake.model.Snake;
 import snake.view.GameScreen;
 
 
+// class for Input Keyboard to get left, right, up or down 
+
 public class KeyInput extends KeyAdapter {
 	
 	

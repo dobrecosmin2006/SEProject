@@ -5,12 +5,15 @@ import com.badlogic.gdx.Preferences;
 
 public class Settings {
 	
+	// i need to load the preferences from GDX library 
 	
 	public static Preferences snakeSettings = Gdx.app
 			.getPreferences("snakeSettings");
 	public static Preferences snakeHighscores = Gdx.app
 			.getPreferences("snakeHighscores");
 
+	// add score into the main DataBase
+	
 	public static void addScore(int score) {
 		int k;
 		for (int i = 0; i < 5; i++) {
@@ -27,6 +30,7 @@ public class Settings {
 		snakeHighscores.flush();
 		Gdx.app.log("settings", "addScore(), score: " + score);
 
+		// put all settings into the Highscore implemented 
 		for (int i = 0; i < 5; i++) {
 			Gdx.app.log("settings", "serpHighscore[" + i + "]: "+ snakeHighscores.getInteger("" + i));
 		}

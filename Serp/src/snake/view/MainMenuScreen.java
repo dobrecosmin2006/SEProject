@@ -31,6 +31,7 @@ public class MainMenuScreen extends SerpScreen {
 	Preferences settings;
 
 	public MainMenuScreen(Game game) {
+		
 		super(game);
 		Gdx.app.error("MainMenuScreen", "Constructor: super(game) job done!");
 		Gdx.app.log("MainMenuScreen",
@@ -43,6 +44,7 @@ public class MainMenuScreen extends SerpScreen {
 		// input = new InputAdapter(); //not necessary at the moment
 
 		// Using static assets
+		
 		background = Assets.background;
 		logo = Assets.logo;
 		mainMenu = Assets.mainMenu;
@@ -54,6 +56,7 @@ public class MainMenuScreen extends SerpScreen {
 	}
 
 	public MainMenuScreen(Game game, AssetManager assets) {
+		
 		super(game, assets);
 		Gdx.app.error("MainMenuScreen",
 				"Constructor: super(game,assets) job done!");
@@ -95,14 +98,9 @@ public class MainMenuScreen extends SerpScreen {
 
 		Gdx.app.log("MainMenuScreen", "render(), spriteBatch.begin()");
 		spriteBatch.begin();
-		spriteBatch.draw(background, 0, 0, width, height); // expand the
-															// background in XXL
-															// displays
-		// 0,0 is bottom-left so to anchor upper: height - 20*ppuY -
-		// logo.getHeight()*ppuY
+		spriteBatch.draw(background, 0, 0, width, height); 
 		
-		
-		// desenez logo-ul si meniul principal :) 
+		// put the main logo 
 		
 		spriteBatch.draw(logo, 32 * ppuX, height - 20 * ppuY - logo.getHeight()
 				* ppuY, 256 * ppuX, 160 * ppuY);

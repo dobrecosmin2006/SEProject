@@ -8,6 +8,8 @@ import com.badlogic.gdx.math.Vector3;
 
 public abstract class SerpScreen implements Screen {
 
+	// in this class i will initiate the main screen for my snake-game
+	
 	Game game;
 	AssetManager assets;
 

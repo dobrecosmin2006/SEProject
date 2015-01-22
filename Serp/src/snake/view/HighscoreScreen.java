@@ -65,12 +65,10 @@ public class HighscoreScreen extends SerpScreen {
 		numbers = assets.get("numbers.png", Texture.class);
 		buttons = assets.get("buttons.png", Texture.class);
 
-		//click = assets.get("click.ogg", Sound.class);
+	
 
-		setLines();/*
-					 * for (int i = 0; i<5; i++) { lines[i] = ""+ (i + 1) + ". "
-					 * + highscores.getInteger("" +i); }
-					 */
+		setLines();
+		
 	}
 
 	@Override
@@ -81,9 +79,8 @@ public class HighscoreScreen extends SerpScreen {
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 
 		spriteBatch.begin();
-		spriteBatch.draw(background, 0, 0, width, height); // expand the
-															// background in XXL
-															// displays
+		spriteBatch.draw(background, 0, 0, width, height); 
+		
 		spriteBatch.draw(mainMenu, 64 * ppuX, height - 62 * ppuY, 196 * ppuX,
 				42 * ppuY, 0, 42, 196, 42, false, false);
 		spriteBatch.draw(buttons, 256 * ppuX, 0, 64 * ppuX, 64 * ppuY, 0, 64,
@@ -114,7 +111,7 @@ public class HighscoreScreen extends SerpScreen {
 	@Override
 	public void drawText(String line, int x, int y) {
 		/*
-		 * Usar siempre entre spriteBatch.begin() y end()
+		 * 
 		 */
 		Gdx.app.log("HighscoreScreen",
 				"drawText(), line.isEmpty(): " + line.isEmpty());
@@ -139,9 +136,7 @@ public class HighscoreScreen extends SerpScreen {
 			}
 
 			/*
-			 * spriteBatch.draw(numbers, x*ppuX, y*ppuY, srcWidth/2, 16,
-			 * srcWidth*ppuX, 32*ppuY, 0, 0, 0, srcX, 0, srcWidth, 32, false,
-			 * false); spriteBatch.draw(numbers, x, y, srcX, 0, srcWidth, 32);
+		
 			 */
 			spriteBatch.draw(numbers, x * ppuX, y * ppuY, srcWidth * ppuX,
 					32 * ppuY, srcX, 0, srcWidth, 32, false, false);
