@@ -28,7 +28,6 @@ public class SerpGame extends Game {
 		else
 		{
 			//it is a problem with the game :-)
-            // and it will  not start
 		
 		}
 	}
