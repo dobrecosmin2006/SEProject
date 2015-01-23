@@ -17,4 +17,11 @@ miscarea snake-ului pe ecran
 
 Daca mai apar si alte idei, acestea vor fi transcrise aici.
 
+
+Pana acum au fost implementate interfetele ptr Desktop.
+
+Urmeaza sa fie implementate si uploadate de catre colegii mei si platformele pt Android si HTML.
+
+SOON !
+
 Mihai
