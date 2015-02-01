@@ -36,6 +36,8 @@ com_crashlytics_export_strings.xml
 *.ap_
 *.apk
 .metadata/
-
+Serp-android/AndroidManifest.xml
+Serp-android/proguard.cfg
+Serp-android/project.properties
 
 
