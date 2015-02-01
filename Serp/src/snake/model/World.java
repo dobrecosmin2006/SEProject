@@ -91,7 +91,7 @@ public class World {
 	}
 
 	/*
-	 * Updating the world
+	 * Updating the world 
 	 */
 	public void update(float deltaTime)
 	{
@@ -116,7 +116,9 @@ public class World {
 				return;
 			}
 			SnakePart head = snake.parts.get(0);
-			if (head.x == stain.x && head.y == stain.y) { // eats a stain
+			if (head.x == stain.x && head.y == stain.y) { 
+				
+				// eats a stain
 				score += SCORE_INCREMENT;
 				snake.grow();
 

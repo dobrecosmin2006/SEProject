@@ -63,8 +63,10 @@ public class LoadingScreen extends SerpScreen {
 
 	}
 
-	private void loadAssetManager() {
+	private void loadAssetManager() 
+	{
 		// Using assets as an AssetManager
+		
 		Gdx.app.log("LoadingScreen", "starting loadGameAssets()");
 		assets.load("background.png", Texture.class);
 		assets.load("logo.png", Texture.class);
@@ -93,6 +95,7 @@ public class LoadingScreen extends SerpScreen {
 	/*
 	 * Load Settings and Highscores
 	 */
+	
 	public void loadSettings() {
 		Gdx.app.log("LoadingScreen",
 				"loadSettings(), soundOn: " + settings.getBoolean("soundOn"));

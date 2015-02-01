@@ -1,14 +1,15 @@
-package snake.game;
+package snake.controller;
+
+import snake.view.LoadingScreen;
 
 import com.badlogic.gdx.Application;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;
 
-import snake.view.LoadingScreen;
+public class SerpGameController extends Game {
 
-public class SerpGame extends Game {
-
+	
 	AssetManager assets;
 	public int ok =1;
 
@@ -31,12 +32,20 @@ public class SerpGame extends Game {
 		
 		}
 	}
-
+	
+	
 	@Override
-	public void create() 
-	{
+	public void create() {
+		// TODO Auto-generated method stub
 		
-		Start_Game(ok);	
+		// in this method I will start the game
+		
+		//Start_Game(ok);
+		
 	}
+	
+	
+	
+	
 
 }

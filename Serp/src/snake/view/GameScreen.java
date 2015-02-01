@@ -17,6 +17,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.math.Vector3;
 
+import snake.model.AddScore;
 import snake.model.KeyInput;
 import snake.model.Poo;
 import snake.model.Settings;
@@ -26,6 +27,8 @@ import snake.model.Food;
 import snake.model.World;
 
 public class GameScreen extends SerpScreen implements ActionListener {
+	
+	// in this class I will have all configs for my Textures
 	
 	float vwidth = 320f; // v from virtual
 	float vheight = 480f;
@@ -429,7 +432,7 @@ public class GameScreen extends SerpScreen implements ActionListener {
 			state = GameState.GameOver;
 			
 			if (highscores.getInteger("4") < world.getScore())
-				Settings.addScore(world.getScore());
+				AddScore.addScore(world.getScore());
 		}
 		if (oldScore != world.getScore())
 		{

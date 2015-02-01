@@ -2,7 +2,8 @@ package snake.model;
 
 public class Food {
 	
-	//avem 3 tipuri de mancare 
+	// we have 3 types of food 
+	// each type have a different score 
 	
 	public static final int TYPE_1 = 0;
 	public static final int TYPE_2 = 1;
@@ -12,6 +13,9 @@ public class Food {
 	public int x, y;
 	public int type;
 
+	
+	// simply initiate the food
+	
 	private void  Food_initiate(int x1, int y1, int type1){
 		
 		this.x = x1;

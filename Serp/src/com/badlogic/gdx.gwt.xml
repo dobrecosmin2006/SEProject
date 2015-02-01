@@ -2,6 +2,7 @@
 <module rename-to="com.badlogic.gdx">
     <inherits name="com.esotericsoftware.tablelayout"/>
     <source path="gdx">
+        <include name="src/snake/model/AddScore.java"/>
         <include name="src/snake/view/Assets.java"/>
         <include name="src/snake/model/Food.java"/>
         <include name="src/snake/view/GameScreen.java"/>
@@ -11,6 +12,7 @@
         <include name="src/snake/view/MainMenuScreen.java"/>
         <include name="src/snake/model/Poo.java"/>
         <include name="src/snake/game/SerpGame.java"/>
+        <include name="src/snake/controller/SerpGameController.java"/>
         <include name="src/snake/view/SerpScreen.java"/>
         <include name="src/snake/model/Settings.java"/>
         <include name="src/snake/model/Snake.java"/>

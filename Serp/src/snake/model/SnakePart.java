@@ -2,6 +2,8 @@ package snake.model;
 
 public class SnakePart {
 	
+	// here I will build and put all parts of my snake 
+	
 	public int x, y;
 	
 	public void BuildSnakePart(int x1,int y1){

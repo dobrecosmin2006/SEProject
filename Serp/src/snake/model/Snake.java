@@ -6,19 +6,21 @@ import java.util.List;
 
 public class Snake {
 	
-	//sens trigonometric 
+	//counter clock direction  
 	
 	public static final int UP = 0;
 	public static final int LEFT = 1;
 	public static final int DOWN = 2;
 	public static final int RIGHT = 3;
 	
-	//creez un Array List de parti ale sarpelui
+	//creez un Array List for snakeparts
 
 	public List<SnakePart> parts = new ArrayList<SnakePart>();
 	
 	public int direction;
 
+	// at run, snake will have 4 elements of the tail 
+	
 	public void Add_Parts()
 	{
 		
@@ -32,7 +34,27 @@ public class Snake {
 	
 	public Snake() {
 		
-		direction = RIGHT;
+		// the start direction is to RIGHT 
+		
+		int ok = 1;
+		if ( ok == 1 )
+		{
+			direction = RIGHT;
+			
+		}
+		else if ( ok == 2 ) 
+		{
+			direction = UP;
+		
+		}
+		else if ( ok == 3 ){
+			
+			direction = DOWN;
+		}
+		else {
+			
+			direction = LEFT;
+		}
 		Add_Parts();
 		
 	}
@@ -42,7 +64,7 @@ public class Snake {
 	 */
 	
 	
-	// aici coteste SNAKE-ul :)  I want to do it from keyboard 
+	// take some turns SNAKE-ul :)  I want to do it also from keyboard 
 	
 	public void turnLeft() {
 		
@@ -57,6 +79,8 @@ public class Snake {
 		if (direction < UP)
 			direction = RIGHT;
 	}
+	
+	// check if the snake will go out from the table -> left , right, etc
 
 	public int Capat_X(int head1)
 	{
@@ -81,6 +105,9 @@ public class Snake {
 		return heady;
 		
 	}
+	
+	// this is the main function for my snake to advance 
+	
 	public void advance() {
 
 		SnakePart head = parts.get(0);
@@ -112,7 +139,7 @@ public class Snake {
 	}
 
 	/*
-	 * Others
+	 * this function is for growing up of the snake when it will eat smth
 	 */
 	public void grow() 
 	{
@@ -120,6 +147,8 @@ public class Snake {
 		SnakePart end = parts.get(parts.size() - 1);
 		parts.add(new SnakePart(end.x, end.y));
 	}
+	
+	// i will check what I have eaten
 
 	public boolean checkBitten() {
 		
@@ -133,6 +162,8 @@ public class Snake {
 		return false;
 	}
 
+	// methods for my keyboard pressed
+	
 	public void keyPressed(KeyEvent e) {
 		// TODO Auto-generated method stub
 		
